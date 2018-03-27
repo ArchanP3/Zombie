@@ -4,8 +4,9 @@
         #zombie_map {
             width: 800px;
             height: 400px;
-            color: grey;
-    
+            color: grey
+
+
     </style>
     <title>Archan's Zombie Map</title>
   </head>
@@ -14,7 +15,7 @@
   <div id="zombie_map"></div>
   <script>
       
-      
+//Coordiantes below are places where emojis are placed, objective is to collect all of them.
     var zombie_map;
     var old_position;
     var tolerance = 10;
@@ -37,6 +38,7 @@
     var all_markers = [];
     function initMap() {
     
+        //Code centers and zooms in the map for anyone playing the game
         zombie_map = new google.maps.Map(document.getElementById('zombie_map'), {
             zoom: 16,
               center: {lat: 43.67116361135007, lng: -79.8250278362674}
@@ -85,6 +87,7 @@
             }
         }
     }
+      //Google API key below
   </script>
   <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjk3NqNM0Slj4g2-XDS0d_4Jvcar_reZg&callback=initMap"&libraries=geometry>
